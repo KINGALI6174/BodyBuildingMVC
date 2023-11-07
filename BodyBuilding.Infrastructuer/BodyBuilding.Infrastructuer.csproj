@@ -1,10 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
@@ -22,9 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BodyBuilding.Application\BodyBuilding.Application.csproj" />
     <ProjectReference Include="..\BodyBuilding.Domain\BodyBuilding.Domain.csproj" />
-    <ProjectReference Include="..\BodyBuilding.Infrastructuer\BodyBuilding.Infrastructuer.csproj" />
   </ItemGroup>
 
 </Project>
