@@ -1,3 +1,5 @@
+using BodyBuilding.Infrastructuer.DbContext;
+
 namespace BodyBuilding
 {
     public class Program
@@ -6,6 +8,7 @@ namespace BodyBuilding
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddDbContext<BodyBuildingDbContext>();
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
