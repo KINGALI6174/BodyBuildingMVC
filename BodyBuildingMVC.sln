@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BodyBuilding.Core", "BodyBuilding.Core", "{A47F56A2-C542-4473-A581-FD56CF0FDD08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BodyBuilding.Application", "BodyBuilding.Application", "{8B45A1B1-5AA5-49D1-A414-7E6E71A8FF7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BodyBuilding.Domain", "BodyBuilding.Domain", "{E7CF17B9-D614-49B0-949D-F3BD7338D6B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bodybuilding.Infrastructuer", "Bodybuilding.Infrastructuer", "{22450464-5E68-450C-86D1-6D0D92F4F007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodyBuilding", "BodyBuilding\BodyBuilding.csproj", "{A1D1AF26-0282-4196-BF63-0E7AE9353A9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1D1AF26-0282-4196-BF63-0E7AE9353A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D1AF26-0282-4196-BF63-0E7AE9353A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D1AF26-0282-4196-BF63-0E7AE9353A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D1AF26-0282-4196-BF63-0E7AE9353A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1D1AF26-0282-4196-BF63-0E7AE9353A9A} = {A47F56A2-C542-4473-A581-FD56CF0FDD08}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F92D6ADB-F6A5-4CE2-A6F8-BA5670937D12}
+	EndGlobalSection
+EndGlobal
