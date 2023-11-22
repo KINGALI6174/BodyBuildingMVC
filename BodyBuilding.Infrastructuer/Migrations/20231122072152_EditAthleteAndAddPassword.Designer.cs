@@ -4,6 +4,7 @@ using BodyBuilding.Infrastructuer.DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BodyBuilding.Infrastructuer.Migrations
 {
     [DbContext(typeof(BodyBuildingDbContext))]
-    partial class BodyBuildingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231122072152_EditAthleteAndAddPassword")]
+    partial class EditAthleteAndAddPassword
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,6 +41,10 @@ namespace BodyBuilding.Infrastructuer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Family")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Gender")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

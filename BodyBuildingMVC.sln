@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BodyBuilding.Domain", "Body
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bodybuilding.Infrastructuer", "Bodybuilding.Infrastructuer", "{22450464-5E68-450C-86D1-6D0D92F4F007}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodyBuilding", "BodyBuilding\BodyBuilding.csproj", "{A1D1AF26-0282-4196-BF63-0E7AE9353A9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BodyBuilding", "BodyBuilding\BodyBuilding.csproj", "{A1D1AF26-0282-4196-BF63-0E7AE9353A9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodyBuilding.Domain", "BodyBuilding.Domain\BodyBuilding.Domain.csproj", "{0D79552F-5742-4D74-BAE7-42887C67AB65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BodyBuilding.Domain", "BodyBuilding.Domain\BodyBuilding.Domain.csproj", "{0D79552F-5742-4D74-BAE7-42887C67AB65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodyBuilding.Infrastructuer", "BodyBuilding.Infrastructuer\BodyBuilding.Infrastructuer.csproj", "{D12CB781-73CD-40BB-BB60-13BEC2736B6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BodyBuilding.Infrastructuer", "BodyBuilding.Infrastructuer\BodyBuilding.Infrastructuer.csproj", "{D12CB781-73CD-40BB-BB60-13BEC2736B6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodyBuilding.Application", "BodyBuilding.Application\BodyBuilding.Application.csproj", "{C34DC428-0B14-4A31-A00B-C23693FD84AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BodyBuilding.Application", "BodyBuilding.Application\BodyBuilding.Application.csproj", "{C34DC428-0B14-4A31-A00B-C23693FD84AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
