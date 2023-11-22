@@ -30,19 +30,23 @@ namespace BodyBuilding.Controllers
         {
             if (ModelState.IsValid)
             {
-                Athlete athlete = new Athlete()
+                if (_Context.Athletes.Any(p => p.NationalCode == athleteDTO.NationalCode.Trim()) == false)
                 {
-                    Name = athleteDTO.Name,
-                    Family = athleteDTO.Family,
-                    BirthDay = athleteDTO.BirthDay,
-                    Gender = athleteDTO.Gender,
-                    NationalCode = athleteDTO.NationalCode,
-                    PhoneNumber = athleteDTO.PhoneNumber,
-                    Password = athleteDTO.Password,
-                };
-                _Context.Athletes.Add(athlete);
-                _Context.SaveChanges();
-                return RedirectToAction("Index", "Home");
+                    Athlete athlete = new Athlete()
+                    {
+                        Name = athleteDTO.Name,
+                        Family = athleteDTO.Family,
+                        BirthDay = athleteDTO.BirthDay,
+                        NationalCode = athleteDTO.NationalCode.Trim(),
+                        PhoneNumber = athleteDTO.PhoneNumber,
+                        Email = athleteDTO.Email,
+                        Password = athleteDTO.Password,
+                    };
+                    _Context.Athletes.Add(athlete);
+                    _Context.SaveChanges();
+                    return RedirectToAction("Index", "Home");
+                }
+                
             }
             return View();
         }

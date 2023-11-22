@@ -14,11 +14,7 @@ namespace BodyBuilding.Domain.Entities.Athlete
         public string NationalCode { get; set; }
         public string PhoneNumber { get; set; }
         public DateTime BirthDay { get; set; }
-
-        public string Gender { get; set; }
-
         public string Email { get; set; }
-        
         public string Password { get; set; }
     }
 }

@@ -14,12 +14,9 @@ namespace BodyBuilding.Application.DTOs
         public string NationalCode { get; set; }
         public string PhoneNumber { get; set; }
         public DateTime BirthDay { get; set; }
-        public string Gender { get; set; }
         public string Email { get; set; }
-
         [DataType(DataType.Password)]
         public string Password { get; set; }
-
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "کلمه عبور و تکرار ان با هم متفاوت هستند")]
         public string RePassword { get; set; }

@@ -59,43 +59,17 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
 
-                                    <h6 class="mb-2 pb-1">جنسیت :</h6>
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" asp-for="Gender" type="radio" name="inlineRadioOptions"
-                                               value="option1" checked />
-                                        <label class="form-check-label" for="femaleGender">مرد</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" asp-for="Gender" name="inlineRadioOptions"
-                                               value="option2" />
-                                        <label class="form-check-label" for="maleGender">زن</label>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 mb-4 pb-2">
-
-                                    <div class="form-outline">
-                                        <label class="form-label" for="emailAddress">کد ملی</label>
-                                        <input type="text" asp-for="NationalCode" class="form-control form-control-lg" />
-                                    </div>
-
-                                </div>
-                                <div class="col-md-6 mb-4 pb-2">
-
                                     <div class="form-outline">
                                         <label class="form-label" for="phoneNumber">شماره موبایل</label>
                                         <input type="tel" asp-for="PhoneNumber" class="form-control form-control-lg" />
                                     </div>
 
+
                                 </div>
                             </div>
 
                             <div class="row">
+                                
                                 <div class="col-md-6 mb-4 pb-2">
 
                                     <div class="form-outline">
@@ -107,29 +81,33 @@
                                 <div class="col-md-6 mb-4 pb-2">
 
                                     <div class="form-outline">
-                                        <label class="form-label" asp-for="Password">رمز عبور</label>
-                                        <input type="password" asp-for="Password" class="form-control form-control-lg" />
+                                        <label class="form-label" asp-for="NationalCode">کد ملی</label>
+                                        <input type="tel" asp-for="NationalCode" class="form-control form-control-lg" />
                                     </div>
+
                                 </div>
                             </div>
 
                             <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <div class="form-outline">
+                                        <label class="form-label" asp-for="Password">رمز عبور</label>
+                                        <input type="password" asp-for="Password" class="form-control form-control-lg" />
+                                    </div>
+
+                                </div>
                                 <div class="col-md-6 mb-4 pb-2">
                                     <div class="form-outline">
                                         <label class="form-label" asp-for="RePassword">تکرا رمز عبور</label>
                                         <input type="password" asp-for="RePassword" class="form-control form-control-lg" />
                                         <span style="color: red" asp-validation-for="RePassword"></span>
                                     </div>
-
-
+                                    
                                 </div>
-                                <div class="col-md-6 mb-4 pb-2">
-
-                                    <div class="mt-1 pt-2">
-                                        <input class="btn btn-primary btn-lg" type="submit" value="ثبت نام" />
-                                    </div>
-
-                                </div>
+                            </div>
+                            <div class="mt-1 pt-2">
+                                <input class="btn btn-primary btn-lg" type="submit" value="ثبت نام" />
                             </div>
                         </form>
                     </div>
